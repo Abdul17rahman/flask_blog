@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+	<h1>Twitter clone</h1>
+	{% for tweet in tweets %}
+		<h6>{{ tweet.author }} @{{ tweet.author }}</h6>
+		<p>{{ tweet.content }}</p>
+		<p>On: {{ tweet.created_on }}</p>
+	{% endfor %}
+{% endblock content %}
